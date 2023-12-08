@@ -17,3 +17,21 @@ ul a {
     box-shadow: 0 0 11px rgba(225,225,225, 1);
     transform: translateY(-5px);
 }
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+.contact-card {
+    width: 30%;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
