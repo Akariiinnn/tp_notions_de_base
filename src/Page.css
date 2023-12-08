@@ -1,0 +1,19 @@
+ul a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.highlighted img {
+    width: 100%;
+    border-radius: 5em;
+}
+
+.highlighted {
+    margin: 2%;
+    border-radius: 1em;
+}
+
+.highlighted:hover {
+    box-shadow: 0 0 11px rgba(225,225,225, 1);
+    transform: translateY(-5px);
+}
