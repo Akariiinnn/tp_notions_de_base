@@ -35,3 +35,7 @@ ul a {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
