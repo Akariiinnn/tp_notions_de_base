@@ -2,12 +2,15 @@ const Header = () => {
     const navCSS = {
         display: "flex",
         justifyContent: "space-between",
+        alignItems: "center",
         padding: "1rem",
-        background: "#cfd8dc"
+        background: "#cfd8dc",
+        paddingRight: "2%"
     };
     const ulCSS = {
         display: "flex",
         listStyle: "none",
+        alignItems: "center"
     };
     const liCSS = {
         paddingRight: "1rem"
@@ -31,7 +34,7 @@ const Header = () => {
                     <a href={"."}><li style={liCSS}>Contact</li></a>
                     <a href={"."}><li style={liCSS}>Se connecter</li></a>
                 </ul>
-                <p>{profile.firstName} {profile.lastName} : {profile.job}</p>
+                <p style={{top: "50%" }}>{profile.firstName} {profile.lastName} : {profile.job}</p>
             </nav>
         </header>
     );

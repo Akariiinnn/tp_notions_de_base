@@ -1,32 +1,21 @@
+import ProductCard from "./ProductCard";
+
 const LastProducts = (sofasProp) => {
 
-    const sofas = sofasProp.sofasProp;
-    const lastSofas = sofas.slice(-5);
-
-    const articleCSS = () => {
-        return {
-            width: "20%"
-        };
-    }
+    const sofas = sofasProp.sofasProp.filter((sofa) => sofa.isPublished);
+    const lastSofas = sofas.slice(-3);
 
     return (
-        <>
+        <section>
             <h1>Nos derniers canapés</h1>
-            <section>
-                <div style={{ display: "flex", flexWrap: "wrap" }}>
+            <div style={{display: "flex", flexWrap: "wrap"}}>
                 {lastSofas.map((sofa) => {
                     return (
-                        <article className={"highlighted"} key={sofa.id} style={articleCSS()}>
-                            <img src={sofa.image} alt={sofa.title}/>
-                            <h2>{sofa.title}</h2>
-                            <p>{sofa.price}€</p>
-                            <p>{sofa.rating}/5</p>
-                        </article>
+                        < ProductCard product={sofa} style={{width: "20%"}}/>
                     )
                 })}
-                </div>
-            </section>
-        </>
+            </div>
+        </section>
     )
 }
 

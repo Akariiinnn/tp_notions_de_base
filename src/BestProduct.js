@@ -1,3 +1,5 @@
+import ProductCard from "./ProductCard";
+
 const BestProduct = (sofasProp) => {
 
     const findHighestRatingObject = (data) => {
@@ -20,24 +22,21 @@ const BestProduct = (sofasProp) => {
         return highestRatingObject;
     };
 
-    const articleCSS = () => {
-        return {
-            width: "20%"
-        };
-    }
-
     const sofas = sofasProp.sofasProp;
     const bestSofa = findHighestRatingObject(sofas);
 
+    const sectionCSS = {
+        width: "150%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        margin: "5%"
+    }
+
     return (
-        <section>
+        <section style={sectionCSS}>
             <h1>Le meilleur de nos canapés</h1>
-            <article key={bestSofa.id} className={"highlighted"} style={articleCSS()}>
-                <img src={bestSofa.image} alt={bestSofa.title}/>
-                <h2>{bestSofa.title}</h2>
-                <p>{bestSofa.price}€</p>
-                <p>{bestSofa.rating}/5</p>
-            </article>
+            <ProductCard product={bestSofa} style={{}} />
         </section>
     )
 }

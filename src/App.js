@@ -2,8 +2,7 @@ import './Page.css';
 import Article from './Article';
 import Footer from './Footer';
 import Header from './Header';
-import BestProduct from './BestProduct'
-import LastProducts from './LastProducts'
+import Products from './Products'
 
 
 function App() {
@@ -68,8 +67,7 @@ function App() {
     return (
         <>
             <Header/>
-            <BestProduct sofasProp = {sofas} />
-            <LastProducts sofasProp = {sofas} />
+            <Products sofasProp = {sofas}/>
             <Article/>
             <Footer/>
         </>
