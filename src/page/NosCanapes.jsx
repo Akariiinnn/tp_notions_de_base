@@ -1,6 +1,8 @@
 import ProductCard from "../partial/ProductCard";
+import Header from "../partial/Header";
+import Footer from "../partial/Footer";
 
-const Nos_Canapes = () => {
+const NosCanapes = () => {
 
     const sofas = [
         {
@@ -59,17 +61,19 @@ const Nos_Canapes = () => {
         },
     ];
     return(
-        <section>
+        <>
+            <Header/>
             <h1>Tout nos canapés</h1>
             <div style={{display: "flex", flexWrap: "wrap"}}>
                 {sofas.map((sofa) => {
                     return (
-                        <ProductCard product={sofa} />
+                        <ProductCard product={sofa} style={{width:"200px"}} />
                     )
                 }) }
             </div>
-        </section>
+            <Footer />
+        </>
     )
 }
 
-export default Nos_Canapes
+export default NosCanapes;

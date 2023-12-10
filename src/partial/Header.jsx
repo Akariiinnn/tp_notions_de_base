@@ -30,7 +30,7 @@ const Header = () => {
                 <h1>Les canapés de génie</h1>
                 <ul style={ulCSS}>
                     <a href={"/"}><li style={liCSS}>Accueil</li></a>
-                    <a href={"."}><li style={liCSS}>Nos canapés</li></a>
+                    <a href={"/nos_canapes"}><li style={liCSS}>Nos canapés</li></a>
                     <a href={"/contact"}><li style={liCSS}>Contact</li></a>
                     <a href={"."}><li style={liCSS}>Se connecter</li></a>
                 </ul>

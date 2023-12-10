@@ -11,7 +11,7 @@ const LastProducts = (sofasProp) => {
             <div style={{display: "flex", flexWrap: "wrap"}}>
                 {lastSofas.map((sofa) => {
                     return (
-                        < ProductCard product={sofa} style={{width: "20%"}}/>
+                        <ProductCard product={sofa} style={{width: "20%"}} />
                     )
                 })}
             </div>
