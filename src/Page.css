@@ -5,7 +5,6 @@ ul a {
 
 .highlighted img {
     width: 100%;
-    border-radius: 5em;
 }
 
 .highlighted {
@@ -38,4 +37,16 @@ ul a {
 
 .contact-card:hover {
     transform: translateY(-5px);
+}
+
+.cgv-text{
+    margin: 2%;
+}
+
+.cgv-text h2 {
+    margin: 2%;
+}
+
+.cgv-text p {
+    margin-left: 4%;
 }
