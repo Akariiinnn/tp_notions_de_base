@@ -1,6 +1,7 @@
 import Header from "../partial/Header";
 import Footer from "../partial/Footer";
 import ContactCards from "../partial/ContactCards";
+import ContactForm from "../partial/ContactForm";
 
 const Contact = () => {
 
@@ -53,6 +54,7 @@ const Contact = () => {
         <>
             <Header/>
             <ContactCards contacts = {contacts} />
+            <ContactForm/>
             <Footer/>
         </>
     )
